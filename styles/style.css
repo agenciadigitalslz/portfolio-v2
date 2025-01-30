@@ -270,6 +270,37 @@ li {
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: 'Montserrat', sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    transition: background-color 
+    0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .cabecalho__menu {
+        align-items: center;
+        
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+    }
+
+    .apresentacao__imagem {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .apresentacao__links__navegacao2 {
+        width: 30%;
+        padding: 7px;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        font-size: 1rem;
+    }
 }
 }
