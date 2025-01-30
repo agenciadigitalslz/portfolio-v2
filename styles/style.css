@@ -207,3 +207,44 @@ li {
     color: var(--cor-secundaria);
     text-align: justify;
 }
+
+/* Responsividade - Ajuste para telas menores */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header {
+        margin-top: 20px;
+    }
+
+    .content {
+        max-width: 90%;
+    }
+
+    .profile-image {
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    /* Alterando a direção do layout para coluna em telas pequenas */
+    .apresentacao {
+        flex-direction: column-reverse; /* Inverte a ordem dos itens: imagem fica em cima, botões embaixo */
+        align-items: center; /* Centralizando os itens */
+    }
+
+    /* Alterando a disposição dos botões para empilhar em telas pequenas */
+    .buttons {
+        gap: 15px; /* Dando um espaçamento entre os botões */
+        align-items: center; /* Centralizando os botões */
+        width: 100%;
+    }
+}
